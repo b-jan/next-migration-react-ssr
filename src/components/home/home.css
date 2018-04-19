@@ -1,0 +1,18 @@
+.home-list {
+  list-style: none;
+  padding: 0;
+}
+
+.home-list li {
+  display: inline-block;
+  margin: 15px;
+}
+
+.home-list li img {
+  width: 75px;
+  height: 75px;
+}
+
+.home-list li p {
+  margin: 10px;
+}
