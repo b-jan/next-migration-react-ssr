@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import logo from '../../assets/images/logo.svg';
+import Link from 'next/link';
 import './header.css';
 
 class Header extends Component {
   render() {
     return (
       <div className="app-header">
-        <img src={logo} className="app-logo" alt="logo" />
+        <img src='../../static/images/logo.svg' className="app-logo" alt="logo" />
         <h1 className="app-title">Welcome to React</h1>
         <ul className="app-nav">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
+          <li><Link href="/"><a>Home</a></Link></li>
+          <li><Link href="/about"><a>About</a></Link></li>
         </ul>
       </div>
     );
